@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="OnlineTests">
+<head>
+  <meta charset="utf-8">
+  <title>Online Tests</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+	<script src="assets/js/result.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header clearfix">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">About</a></li>
+          <li role="presentation"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Online Tests</h3>
+    </div>
+
+    <div class="page-header">
+      <h2>Result</h2>
+      <span class="label label-success">Green: The correct answer</span>
+      <span class="label label-info">Blue: You have selected correct answer</span>
+      <span class="label label-danger">Red: Your wrong answer</span>
+    </div>
+    <div class="row content" ng-controller="ResultCtrl">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <tr>
+            <th>#</th>
+            <th>Question</th>
+            <th colspan="4">Options</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              The title of question
+            </td>
+            <td class="success">OPT 1</td>
+            <td>OPT 2</td>
+            <td class="danger">OPT 3</td>
+            <td>OPT 4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              The title of question
+            </td>
+            <td>OPT 1</td>
+            <td>OPT 2</td>
+            <td>OPT 3</td>
+            <td class="success">OPT 4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              The title of question
+            </td>
+            <td>OPT 1</td>
+            <td class="info">OPT 2</td>
+            <td>OPT 3</td>
+            <td>OPT 4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              The title of question
+            </td>
+            <td>OPT 1</td>
+            <td>OPT 2</td>
+            <td class="success">OPT 3</td>
+            <td>OPT 4</td>
+          </tr>
+        </table>
+
+        <div class="alert alert-success" role="alert">
+          You'r Score: 5
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+  </div>
+</body>
+</html>
